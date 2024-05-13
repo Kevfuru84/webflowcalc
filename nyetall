@@ -17,7 +17,7 @@ document.getElementById("Output_kapasitet_per_oppsam_res").value = 81;
 document.getElementById("Output_kapasitet_per_akvedukt").value = 5;
 
 // -- Setting inital values for offer after "Behov kapasitet kalkulator"
-document.getElementById("Input_tilbud_res_resantall").value = 129;
+document.getElementById("Input_tilbud_res_resantall").value = 0;
 document.getElementById("Input_tilbud_res_priseksmva").value = 1294;
 document.getElementById("Input_tilbud_res_delsum").value = 167296;
 document.getElementById("Input_tilbud_res_storelokkantall").value = 0;
