@@ -35,7 +35,7 @@ document.getElementById("Input_tilbud_res_monteringsum").value = 113853;
 document.getElementById("Output_tilbud_res_sum").value = 569264;
 
 document.getElementById("Input_tilbud_fas_platekassevannreantall").value = 233;
-document.getElementById("Input_tilbud_fas_platekassevannrepriseksmva").value = 920;
+document.getElementById("Input_tilbud_fas_platekassevannrepriseksmva").value = 480;
 document.getElementById("Input_tilbud_fas_platekassevannredelsum").value = 111725;
 document.getElementById("Output_tilbud_fas_summaterialkost").value = 111725;
 document.getElementById("Input_tilbud_fas_monteringprosent").value = 25;
@@ -394,12 +394,15 @@ function rainCostCalculation() {
 	var Input_tilbud_res_storelokkdelsum = Math.round(parseInt(Input_tilbud_res_storelokkantall) * parseInt(Input_tilbud_res_storelokkpriseksmva));
 	document.getElementById("Input_tilbud_res_storelokkdelsum").value = Input_tilbud_res_storelokkdelsum;
 	
-	var Input_tilbud_res_dyrkekasseantall = document.getElementById("Input_tilbud_res_dyrkekasseantall").value;
+	var Input_tilbud_res_dyrkekasseantall = Math.round(parseInt(Input_tilbud_res_resantall * 0));
+    document.getElementById("Input_tilbud_res_dyrkekasseantall").value = Input_tilbud_res_dyrkekasseantall;
+
 	var Input_tilbud_res_dyrkekassepriseksmva = document.getElementById("Input_tilbud_res_dyrkekassepriseksmva").value;	
 	var Input_tilbud_res_dyrkekassedelsum = Math.round(parseInt(Input_tilbud_res_dyrkekasseantall) * parseInt(Input_tilbud_res_dyrkekassepriseksmva));
 	document.getElementById("Input_tilbud_res_dyrkekassedelsum").value = Input_tilbud_res_dyrkekassedelsum;
 	
-	var Input_tilbud_res_smaalokkantall = document.getElementById("Input_tilbud_res_smaalokkantall").value;
+	var Input_tilbud_res_smaalokkantall = Input_tilbud_res_resantall;
+    document.getElementById("Input_tilbud_res_smaalokkantall").value = Input_tilbud_res_smaalokkantall;
 	var Input_tilbud_res_smaalokkpriseksmva = document.getElementById("Input_tilbud_res_smaalokkpriseksmva").value;
 	
 	var Input_tilbud_res_smaalokkdelsum = Math.round(parseInt(Input_tilbud_res_smaalokkantall) * parseInt(Input_tilbud_res_smaalokkpriseksmva));
@@ -411,8 +414,6 @@ function rainCostCalculation() {
 	var Input_tilbud_res_monteringprosent = (document.getElementById("Input_tilbud_res_monteringprosent").value / 100);
 	var Input_tilbud_res_monteringsum = Math.round(Input_tilbud_res_monteringprosent * Output_tilbud_res_summaterialkost);
 	document.getElementById("Input_tilbud_res_monteringsum").value = Input_tilbud_res_monteringsum;
-}
-
 	
 	//Sum reservoir
 	var Output_tilbud_res_sum = parseInt(Output_tilbud_res_summaterialkost) + parseInt(Input_tilbud_res_monteringsum);
