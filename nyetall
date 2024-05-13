@@ -23,7 +23,7 @@ document.getElementById("Input_tilbud_res_delsum").value = 167296;
 document.getElementById("Input_tilbud_res_storelokkantall").value = 0;
 document.getElementById("Input_tilbud_res_storelokkpriseksmva").value = 844;
 document.getElementById("Input_tilbud_res_storelokkdelsum").value = 109106;
-document.getElementById("Input_tilbud_res_dyrkekasseantall").value = 258;
+document.getElementById("Input_tilbud_res_dyrkekasseantall").value = 0;
 document.getElementById("Input_tilbud_res_dyrkekassepriseksmva").value = 844;
 document.getElementById("Input_tilbud_res_dyrkekassedelsum").value = 145125;
 document.getElementById("Input_tilbud_res_smaalokkantall").value = 129;
@@ -171,9 +171,9 @@ document.getElementById("Input_vektkalk_egenvekt_litelokk_meddyrke").value = 0.4
 document.getElementById("Input_vektkalk_antall_stortlokk_meddyrke").value = 0.0;
 document.getElementById("Input_vektkalk_egenvekt_stortlokk_meddyrke").value = 1.2;
 document.getElementById("Output_vektkalk_sum_vekt_lokk_meddyrke").value = 0.0;
-document.getElementById("Input_vektkalk_antall_dyrkekasser_meddyrke").value = 172;
+document.getElementById("Input_vektkalk_antall_dyrkekasser_meddyrke").value = 0;
 document.getElementById("Input_vektkalk_antall_oppsamling_meddyrke").value = 86;
-document.getElementById("Output_vektkalk_sum_vekt_dyrkekasse_meddyrke").value = 9271;
+document.getElementById("Output_vektkalk_sum_vekt_dyrkekasse_meddyrke").value = 0.0;
 document.getElementById("Output_vektkalk_sum_vekt_oppsamling_meddyrke").value = 7998;
 
 document.getElementById("Input_vektkalk_vannperakvedukt").value = 5.2;
@@ -374,7 +374,7 @@ function simpleCalculation() {
 	document.getElementById("Input_tilbud_res_resantall").value = Math.round(Antall_oppsam_res);
 	//document.getElementById("Input_tilbud_res_storelokkantall").value = Math.round(Antall_oppsam_res);
 	
-	document.getElementById("Input_tilbud_fas_platekassevannreantall").value = Math.round(Behov_antall_akvedukt);
+	document.getElementById("Input_tilbud_fas_platekassevannreantall").value = Math.round(Antall_akvedukt);
 	document.getElementById("Input_vegetasjonfas_antall").value = Math.round(Behov_antall_akvedukt);
 	
 	rainCostCalculation();
@@ -394,7 +394,7 @@ function rainCostCalculation() {
 	var Input_tilbud_res_storelokkdelsum = Math.round(parseInt(Input_tilbud_res_storelokkantall) * parseInt(Input_tilbud_res_storelokkpriseksmva));
 	document.getElementById("Input_tilbud_res_storelokkdelsum").value = Input_tilbud_res_storelokkdelsum;
 	
-	var Input_tilbud_res_dyrkekasseantall = Math.round(parseInt(Input_tilbud_res_resantall * 2));
+	var Input_tilbud_res_dyrkekasseantall = Math.round(parseInt(Input_tilbud_res_resantall * parseInt(Input_tilbud_res_dyrkekassepriseksmva));
     document.getElementById("Input_tilbud_res_dyrkekasseantall").value = Input_tilbud_res_dyrkekasseantall;
 
 	var Input_tilbud_res_dyrkekassepriseksmva = document.getElementById("Input_tilbud_res_dyrkekassepriseksmva").value;	
