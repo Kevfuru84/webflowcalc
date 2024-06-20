@@ -30,7 +30,7 @@ document.getElementById("Input_tilbud_res_smaalokkantall").value = 0;
 document.getElementById("Input_tilbud_res_smaalokkpriseksmva").value = 394;
 document.getElementById("Input_tilbud_res_smaalokkdelsum").value = 0;
 document.getElementById("Output_tilbud_res_summaterialkost").value = 0;
-document.getElementById("Input_tilbud_res_monteringprosent").value = 60;
+document.getElementById("Input_tilbud_res_monteringprosent").value = 100;
 document.getElementById("Input_tilbud_res_monteringsum").value = 0;
 document.getElementById("Output_tilbud_res_sum").value = 0;
 
@@ -38,7 +38,7 @@ document.getElementById("Input_tilbud_fas_platekassevannreantall").value = 233;
 document.getElementById("Input_tilbud_fas_platekassevannrepriseksmva").value = 920;
 document.getElementById("Input_tilbud_fas_platekassevannredelsum").value = 111725;
 document.getElementById("Output_tilbud_fas_summaterialkost").value = 111725;
-document.getElementById("Input_tilbud_fas_monteringprosent").value = 60;
+document.getElementById("Input_tilbud_fas_monteringprosent").value = 100;
 document.getElementById("Input_tilbud_fas_monteringsum").value = 128616;
 document.getElementById("Output_tilbud_fas_sum").value = 139656;
 
