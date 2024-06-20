@@ -8,10 +8,10 @@ document.getElementById("Input_oppsamlings_krav_1time").value = 50;
 document.getElementById("Input_oppsamlings_krav_2time").value = 15;
 document.getElementById("Input_pot_disp_per_sek_m2").value = 2;
 
-document.getElementById("Input_oppsamlings_tak_1time").value = 60;
-document.getElementById("Input_oppsamlings_fasade_1time").value = 40;
-document.getElementById("Input_oppsamlings_tak_2time").value = 60;
-document.getElementById("Input_oppsamlings_fasade_2time").value = 40;
+document.getElementById("Input_oppsamlings_tak_1time").value = 100;
+document.getElementById("Input_oppsamlings_fasade_1time").value = 0;
+document.getElementById("Input_oppsamlings_tak_2time").value = 100;
+document.getElementById("Input_oppsamlings_fasade_2time").value = 0;
 
 document.getElementById("Output_kapasitet_per_oppsam_res").value = 81;
 document.getElementById("Output_kapasitet_per_akvedukt").value = 5;
@@ -57,14 +57,14 @@ document.getElementById("Output_vegetasjonfas_inktransport_sum").value = 64338;
 // Setting inital values on page for "Kost/nytte kalkulator"
 
 // -- Forlenget Amorteringstid --
-document.getElementById("Forlenget_amorteringstid_aar1").value = 25;
-document.getElementById("Forlenget_amorteringstid_aar2").value = 30;
+document.getElementById("Forlenget_amorteringstid_aar1").value = 20;
+document.getElementById("Forlenget_amorteringstid_aar2").value = 25;
 
 document.getElementById("Forlenget_amorteringstid_lonebelop1").value = 100000000;
 document.getElementById("Forlenget_amorteringstid_lonebelop2").value = 100000000;
 
-document.getElementById("Forlenget_amorteringstid_procent1").value = 5;
-document.getElementById("Forlenget_amorteringstid_procent2").value = 5;
+document.getElementById("Forlenget_amorteringstid_procent1").value = 8;
+document.getElementById("Forlenget_amorteringstid_procent2").value = 8;
 
 document.getElementById("Forlenget_amorteringstid_rentekost1").value = 5000000;
 document.getElementById("Forlenget_amorteringstid_rentekost2").value = 5000000;
